@@ -14,8 +14,6 @@ int main(int argc, char *argv[])
         while(digitalRead(0) == 1);
         digitalWrite(1, LOW);
         digitalWrite(2, HIGH);
-        delay(50);
-        digitalWrite(2, LOW);
         /*ifttt("http://red.eecs.yorku.ca:8080/trigger/event/with/key/123", "jl$
          */printf("Waiting for event\n");
         while(digitalRead(0) == 0);
